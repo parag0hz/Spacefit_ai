@@ -1,0 +1,30 @@
+"""Configuration defaults for SpaceFit v2."""
+from __future__ import annotations
+
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "LayoutGPT" / "ATISS" / "data_output"
+RESULTS_DIR = ROOT / "spacefit_v2" / "results"
+
+SCORER_NUMERIC_DIM = 16
+SCORER_EMBED_DIM = 4
+SCORER_INPUT_DIM = SCORER_NUMERIC_DIM + SCORER_EMBED_DIM
+SCORER_HIDDEN_DIM = 64
+
+TRAIN_BATCH_SIZE = 4096
+TRAIN_LR = 1e-3
+TRAIN_EPOCHS = 100
+
+DIFFOPT_LR = 1e-2
+DIFFOPT_ITERS = 100
+
+LAMBDA_PHYSICS = 25.0
+LAMBDA_SEMANTIC = 2.0
+LAMBDA_STYLE = 3.0
+LAMBDA_SCORER = 1.0
+LAMBDA_REGION = 0.1
+
+DOOR_CLEARANCE_RADIUS = 0.8
+WALL_DISTANCE_THRESHOLD = 0.2

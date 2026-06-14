@@ -1,0 +1,62 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Datasets and generated benchmark data
+dataset/
+datasets/
+spacefit_v2/data/single_target_benchmark/
+**/3D-FRONT/
+**/3D-FUTURE*/
+
+# Experiment outputs and large artifacts
+spacefit_v2/results/
+results/
+outputs/
+runs/
+checkpoints/
+weights/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.obj
+*.mtl
+
+# Documents and presentation files
+*.pdf
+*.ppt
+*.pptx
+
+# Generated media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.webm
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
